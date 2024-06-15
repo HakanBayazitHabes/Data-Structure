@@ -1,0 +1,15 @@
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/bin/Debug/net8.0/BigONotationFunctions
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/bin/Debug/net8.0/BigONotationFunctions.deps.json
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/bin/Debug/net8.0/BigONotationFunctions.runtimeconfig.json
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/bin/Debug/net8.0/BigONotationFunctions.dll
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/bin/Debug/net8.0/BigONotationFunctions.pdb
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/BigONotationFunctions.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/BigONotationFunctions.AssemblyInfoInputs.cache
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/BigONotationFunctions.AssemblyInfo.cs
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/BigONotationFunctions.csproj.CoreCompileInputs.cache
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/BigONotationFunctions.sourcelink.json
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/BigONotationFunctions.dll
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/refint/BigONotationFunctions.dll
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/BigONotationFunctions.pdb
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/BigONotationFunctions.genruntimeconfig.cache
+/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/Debug/net8.0/ref/BigONotationFunctions.dll
