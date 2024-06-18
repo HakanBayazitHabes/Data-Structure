@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigONotationFunctions", "BigONotationFunctions\BigONotationFunctions.csproj", "{DCD4229C-138E-4D97-B4D3-640147CE324A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArraysAndLists", "ArraysAndLists", "{B647AE88-CDDD-44D1-A898-DC5BD4BC4DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainsDuplicate", "ArraysAndLists\ContainsDuplicate\ContainsDuplicate.csproj", "{10B5235F-E31D-43CB-8F7E-1992669E8302}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{DCD4229C-138E-4D97-B4D3-640147CE324A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCD4229C-138E-4D97-B4D3-640147CE324A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCD4229C-138E-4D97-B4D3-640147CE324A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10B5235F-E31D-43CB-8F7E-1992669E8302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B5235F-E31D-43CB-8F7E-1992669E8302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B5235F-E31D-43CB-8F7E-1992669E8302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B5235F-E31D-43CB-8F7E-1992669E8302}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10B5235F-E31D-43CB-8F7E-1992669E8302} = {B647AE88-CDDD-44D1-A898-DC5BD4BC4DE9}
 	EndGlobalSection
 EndGlobal
