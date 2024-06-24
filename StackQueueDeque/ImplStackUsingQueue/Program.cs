@@ -1,8 +1,8 @@
 ﻿
 public class MyStack
 {
-
     Queue<int> elements;
+    int lastElement;
 
     public MyStack()
     {
@@ -12,19 +12,28 @@ public class MyStack
     public void Push(int x)
     {
         elements.Enqueue(x);
+        lastElement = x;
     }
 
     public int Pop()
     {
-        int dequeueElement = 0;
         int elementCount = elements.Count;
-        for (int i = 0; i < elementCount; i++)
+        for (int i = 0; i < elementCount - 1; i++)
         {
-            dequeueElement = elements.Dequeue();
-            if (i == elementCount - 1) break;
-            elements.Enqueue(dequeueElement);
+            int temp = elements.Dequeue();
+            if (i == elementCount - 2) lastElement = temp;
+            elements.Enqueue(temp);
         }
-        return dequeueElement;
+        return elements.Dequeue();
+        // int dequeueElement = 0;
+        // int elementCount = elements.Count;
+        // for (int i = 0; i < elementCount; i++)
+        // {
+        //     dequeueElement = elements.Dequeue();
+        //     if (i == elementCount - 1) break;
+        //     elements.Enqueue(dequeueElement);
+        // }
+        // return dequeueElement;
     }
 
     // int elementCount = elements.Count;
@@ -37,7 +46,7 @@ public class MyStack
 
     public int Top()
     {
-        return elements.LastOrDefault();
+        return lastElement;
     }
 
     public bool Empty()
