@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplStackUsingQueue", "Stac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionOfBaseballGame", "StackQueueDeque\SolutionOfBaseballGame\SolutionOfBaseballGame.csproj", "{57E96874-5242-421F-A397-F9FCEC4557BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionOfDailyTemperatures", "StackQueueDeque\SolutionOfDailyTemperatures\SolutionOfDailyTemperatures.csproj", "{A06F8878-6CC9-46B4-9E94-03E8830C432B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{57E96874-5242-421F-A397-F9FCEC4557BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57E96874-5242-421F-A397-F9FCEC4557BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57E96874-5242-421F-A397-F9FCEC4557BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A06F8878-6CC9-46B4-9E94-03E8830C432B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A06F8878-6CC9-46B4-9E94-03E8830C432B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A06F8878-6CC9-46B4-9E94-03E8830C432B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A06F8878-6CC9-46B4-9E94-03E8830C432B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{949883BC-5BB3-493A-A0BA-035B16CB0D5E} = {2D226CD7-C822-407F-A810-61120355944B}
@@ -84,5 +90,6 @@ Global
 		{968F925C-8D25-487C-ACC2-C445AA9DE6CA} = {2D226CD7-C822-407F-A810-61120355944B}
 		{F365BB53-6CD2-4D9A-BEF6-7B7FE5C3CA51} = {2D226CD7-C822-407F-A810-61120355944B}
 		{57E96874-5242-421F-A397-F9FCEC4557BD} = {2D226CD7-C822-407F-A810-61120355944B}
+		{A06F8878-6CC9-46B4-9E94-03E8830C432B} = {2D226CD7-C822-407F-A810-61120355944B}
 	EndGlobalSection
 EndGlobal
