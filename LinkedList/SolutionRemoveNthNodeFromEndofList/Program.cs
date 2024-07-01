@@ -33,29 +33,29 @@ public class LinkedList
 
     public ListNode RemoveNthFromEnd(int n)
     {
-        ListNode leftPointer = head;
-        ListNode rightPointer = head;
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode leftPointer = dummy;
+        ListNode rightPointer = dummy;
 
-        while (n > 0 && rightPointer != null)
+        // rightPointer'ı n+1 adım ilerlet.
+        for (int i = 0; i <= n; i++)
         {
             rightPointer = rightPointer.next;
-            n -= 1;
         }
 
-        while (rightPointer != null && rightPointer.next != null)
+        // rightPointer sona ulaşana kadar her iki pointer'ı da ilerlet.
+        while (rightPointer != null)
         {
             leftPointer = leftPointer.next;
             rightPointer = rightPointer.next;
         }
 
-        if (leftPointer == head && rightPointer == null)
-        {
-            return head.next;
-        }
-
+        // Silme işlemi.
         leftPointer.next = leftPointer.next.next;
 
-        return head;
+        // Dummy'nin next'i, düzenlenmiş listenin başıdır.
+        return dummy.next;
     }
 
     public void PrintList()
