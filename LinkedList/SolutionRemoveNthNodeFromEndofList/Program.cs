@@ -15,7 +15,7 @@ public class LinkedList
 
     public void AddNode(int data)
     {
-        ListNode newNode = new ListNode(data);
+        ListNode newNode = new(data);
         if (head == null)
         {
             head = newNode;
@@ -33,7 +33,7 @@ public class LinkedList
 
     public ListNode RemoveNthFromEnd(int n)
     {
-        ListNode dummy = new ListNode(0);
+        ListNode dummy = new(0);
         dummy.next = head;
         ListNode leftPointer = dummy;
         ListNode rightPointer = dummy;
