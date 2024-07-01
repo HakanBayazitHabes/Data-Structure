@@ -33,39 +33,29 @@ public class LinkedList
 
     public ListNode RemoveNthFromEnd(int n)
     {
-        if (head == null)
+        ListNode leftPointer = head;
+        ListNode rightPointer = head;
+
+        while (n > 0 && rightPointer != null)
         {
-            Console.WriteLine("List is Empty");
+            rightPointer = rightPointer.next;
+            n -= 1;
         }
 
-        ListNode current = head;
-        List<ListNode> previousList = [];
-        ListNode previous = null;
-
-        while (current != null)
+        while (rightPointer != null && rightPointer.next != null)
         {
-            previousList.Add(current);
-            current = current.next;
-
-            if (current == null)
-            {
-                ListNode lastNthNode = previousList.TakeLast(n).First();
-                ListNode lastNPlus1thNode = previousList.TakeLast(n + 1).First();
-                if (lastNthNode == lastNPlus1thNode)
-                {
-                    head = head.next;
-                    break;
-                }
-                current = lastNthNode;
-                previous = lastNPlus1thNode;
-                previous.next = current.next;
-
-                break;
-            }
+            leftPointer = leftPointer.next;
+            rightPointer = rightPointer.next;
         }
+
+        if (leftPointer == head && rightPointer == null)
+        {
+            return head.next;
+        }
+
+        leftPointer.next = leftPointer.next.next;
 
         return head;
-
     }
 
     public void PrintList()
