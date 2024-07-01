@@ -56,50 +56,18 @@ public class LinkedList
         }
     }
 
-    private int CountLinkedList(ListNode node)
-    {
-        int counter = 0;
-        while (node != null)
-        {
-            counter++;
-            node = node.next;
-        }
-        return counter;
-    }
-
     public ListNode GetIntersectionNode()
     {
-        ListNode longerList;
-        ListNode shorterList;
+        ListNode firstPointer = headA;
+        ListNode secondPointer = headB;
 
-        int headALenght = CountLinkedList(headA);
-        int headBLenght = CountLinkedList(headB);
-
-        int diff = Math.Abs(headALenght - headBLenght);
-
-        if (headALenght > headBLenght)
+        while (firstPointer != secondPointer)
         {
-            longerList = headA; shorterList = headB;
-        }
-        else
-        {
-            longerList = headB; shorterList = headA;
+            firstPointer = firstPointer == null ? headB : firstPointer.next;
+            secondPointer = secondPointer == null ? headA : secondPointer.next;
         }
 
-        for (int i = 0; i < diff; i++)
-        {
-            longerList = longerList.next;
-        }
-
-        while (shorterList != null && longerList != null)
-        {
-            if (shorterList == longerList)
-                return longerList;
-            shorterList = shorterList.next;
-            longerList = longerList.next;
-        }
-
-        return null;
+        return firstPointer;
     }
 }
 
