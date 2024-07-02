@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionRemoveNthNodeFromEn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionIntersectionOfTwoLinkedLists", "LinkedList\SolutionIntersectionOfTwoLinkedLists\SolutionIntersectionOfTwoLinkedLists.csproj", "{295F4275-BF24-4221-849E-F679CBF9596E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionFindTheDuplicateNumber", "LinkedList\SolutionFindTheDuplicateNumber\SolutionFindTheDuplicateNumber.csproj", "{C45586E3-A1CD-4A81-BF24-93883D9E5840}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +96,10 @@ Global
 		{295F4275-BF24-4221-849E-F679CBF9596E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{295F4275-BF24-4221-849E-F679CBF9596E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{295F4275-BF24-4221-849E-F679CBF9596E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C45586E3-A1CD-4A81-BF24-93883D9E5840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45586E3-A1CD-4A81-BF24-93883D9E5840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45586E3-A1CD-4A81-BF24-93883D9E5840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45586E3-A1CD-4A81-BF24-93883D9E5840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{949883BC-5BB3-493A-A0BA-035B16CB0D5E} = {2D226CD7-C822-407F-A810-61120355944B}
@@ -107,5 +113,6 @@ Global
 		{A06F8878-6CC9-46B4-9E94-03E8830C432B} = {2D226CD7-C822-407F-A810-61120355944B}
 		{A7D8542B-09B0-4086-98E4-901E54B6FF1A} = {FD620450-3EA3-4B62-A512-3BDF73FABD18}
 		{295F4275-BF24-4221-849E-F679CBF9596E} = {FD620450-3EA3-4B62-A512-3BDF73FABD18}
+		{C45586E3-A1CD-4A81-BF24-93883D9E5840} = {FD620450-3EA3-4B62-A512-3BDF73FABD18}
 	EndGlobalSection
 EndGlobal
