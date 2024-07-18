@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/BigONotationFunctions.csproj": {}
+    "/Users/hakanbayazithabes/Desktop/Software/Data-Structure/BigONotationFunctions/BigONotationFunctions.csproj": {}
   },
   "projects": {
-    "/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/BigONotationFunctions.csproj": {
+    "/Users/hakanbayazithabes/Desktop/Software/Data-Structure/BigONotationFunctions/BigONotationFunctions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/BigONotationFunctions.csproj",
+        "projectUniqueName": "/Users/hakanbayazithabes/Desktop/Software/Data-Structure/BigONotationFunctions/BigONotationFunctions.csproj",
         "projectName": "BigONotationFunctions",
-        "projectPath": "/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/BigONotationFunctions.csproj",
+        "projectPath": "/Users/hakanbayazithabes/Desktop/Software/Data-Structure/BigONotationFunctions/BigONotationFunctions.csproj",
         "packagesPath": "/Users/hakanbayazithabes/.nuget/packages/",
-        "outputPath": "/Users/hakanbayazithabes/Desktop/Data-Structure/BigONotationFunctions/obj/",
+        "outputPath": "/Users/hakanbayazithabes/Desktop/Software/Data-Structure/BigONotationFunctions/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hakanbayazithabes/.nuget/NuGet/NuGet.Config"
