@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 
 public class Node
 {
@@ -124,6 +125,25 @@ class BinarySearchTree
         }
         return values;
     }
+
+    public List<int> DFSPreOrder()
+    {
+        List<int> values = [];
+
+        void Traverse(Node currnetNode)
+        {
+            if (currnetNode == null) return;
+
+            values.Add(currnetNode.value);
+            if (currnetNode.left is not null)
+                Traverse(currnetNode.left);
+
+            if (currnetNode.right is not null)
+                Traverse(currnetNode.right);
+        }
+        Traverse(root);
+        return values;
+    }
 }
 
 
@@ -142,7 +162,7 @@ class Program
         Console.WriteLine(binarySearchTree.Insert(95));
 
         Console.WriteLine(string.Join(", ", binarySearchTree.BFS()));
-
+        Console.WriteLine(string.Join(", ", binarySearchTree.DFSPreOrder()));
 
     }
 }
