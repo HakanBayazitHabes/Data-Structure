@@ -1,2 +1,58 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Collections;
+
+namespace Apps;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // array - Dez avantajı sabit boyuttatır
+
+        char[] arrChar = new char[3];
+        var arrInt = Array.CreateInstance(typeof(int), 5);
+        arrInt.SetValue(10, 0); // arrInt[0]=10
+        arrInt.GetValue(0);     // 10
+        Console.WriteLine(arrChar.Length);
+
+        // arratList - type-safe yapısnı kaybediyoruz
+
+        // 10 -> boxing -> object
+        // b -> boxing -> object
+        // object -> unboxing - int
+
+        // Burada tip güvenliğini kaybettiğimizden dolayı nesneler üzerinden çalışır ve bundan ötürü performansda kayıplar yaşıyoruz
+        var arrObj = new ArrayList();
+        arrObj.Add(10);
+        arrObj.Add('b');
+        Console.WriteLine(arrObj.Count);
+
+        // List<T>
+        // Burada her ikisninde özelliğini alır. Tip güvenliğini sağlar ve dynamic olarak veri eklenebilir.
+        var arrInt1 = new List<int>();
+        arrInt1.Add(10);
+        arrInt1.Add((int)'b');
+        arrInt1.AddRange(new int[] { 1, 2, 3 });
+        Console.WriteLine(arrInt1.Count);
+
+        /*                      Collections
+        Collections nedir ?
+
+        - Bir grup nesnenin organize şekilde yönetildiği yapılar Collections olarak ifade edilebilir.
+        - Bu yapılar ilgili veri yapısına ekleme yapma, araya ekleme yapma, arama, sıralama ya da özel bir takım fonksiyonlar içerir.
+        - Collections ifadeleri generic ya da non-generic(object-boxing-unboxing) olarka tanımlanabilirler.
+
+        System.Collections
+            - ArrayList, Hashtable, Queue, Stack
+
+        System.Collections.Generic (key,value)
+            - Dictionary<TKey, TValue>, List<T>, Queue<T>
+            - SortedList<TKey, TValue>, Stack<T>
+            - SortedSet<TKey, Tvalue>, HashSet<TKey, TValue>
+
+    
+        
+        */
+
+
+    }
+}
