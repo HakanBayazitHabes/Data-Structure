@@ -31,8 +31,8 @@ class Solution:
         left = self.dfs(node.left)
         right = self.dfs(node.right)
 
-        left = max(left, 0)  # type: ignore
-        right = max(right, 0)  # type: ignore
+        left = max(left, 0)
+        right = max(right, 0)
 
         self.answer = max(self.answer, node.val + left + right)
 
