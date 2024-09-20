@@ -4,6 +4,22 @@ namespace Apps;
 
 class Program
 {
+
+    static void Main(string[] args)
+    {
+        var arr = new DataStructures
+            .Array
+            .Array<int>();
+
+        arr.Add(23);
+        arr.Add(22);
+        arr.Add(44);
+
+        Console.WriteLine($"{arr.Count} / {arr.Capacity}");
+        // Console.ReadKey();
+    }
+
+    /*
     static void Main(string[] args)
     {
         // array - Dez avantajı sabit boyuttatır
@@ -34,7 +50,7 @@ class Program
         arrInt1.AddRange(new int[] { 1, 2, 3 });
         Console.WriteLine(arrInt1.Count);
 
-        /*                      Collections
+                               Collections
         Collections nedir ?
 
         - Bir grup nesnenin organize şekilde yönetildiği yapılar Collections olarak ifade edilebilir.
@@ -49,10 +65,7 @@ class Program
             - SortedList<TKey, TValue>, Stack<T>
             - SortedSet<TKey, Tvalue>, HashSet<TKey, TValue>
 
-    
-        
-        */
+    } 
+    */
 
-
-    }
 }
