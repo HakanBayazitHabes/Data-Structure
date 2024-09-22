@@ -11,6 +11,28 @@ namespace DataStructures.Array
             this.Count = count;
 
         }
+
+        public Array(params T[] initial)
+        {
+            InnerList = new T[initial.Length];
+            Count = 0;
+
+            foreach (var item in initial)
+            {
+                Add(item);
+            }
+        }
+
+        public Array(IEnumerable<T> collection)
+        {
+            InnerList = new T[collection.ToArray().Length];
+            Count = 0;
+            foreach (var item in collection)
+            {
+                Add(item);
+            }
+        }
+
         public int Count { get; private set; }
         public int Capacity => InnerList.Length;
 

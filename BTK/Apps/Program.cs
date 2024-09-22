@@ -4,7 +4,26 @@ namespace Apps;
 
 class Program
 {
+    static void Main(string[] args)
+    {
+        var p1 = new DataStructures.Array.Array<int>(1, 2, 3, 4);
+        var p2 = new int[] { 8, 9, 10, 11 };
+        var p3 = new List<int>() { 5, 15, 20, 25 };
+        var p4 = new ArrayList() { 12, 14, 15 }; // The reason for the error description here is because the hint is not safe.
 
+        var arr = new DataStructures
+            .Array
+            .Array<int>(p3);
+
+        foreach (var item in arr)
+        {
+            Console.WriteLine(item);
+        }
+
+    }
+
+
+    /*
     static void Main(string[] args)
     {
         var arr = new DataStructures
@@ -33,6 +52,7 @@ class Program
         Console.WriteLine($"{arr.Count} / {arr.Capacity}");
         // Console.ReadKey();
     }
+    */
 
     /*
     static void Main(string[] args)
