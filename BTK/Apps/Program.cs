@@ -6,14 +6,44 @@ class Program
 {
     static void Main(string[] args)
     {
-        var p1 = new DataStructures.Array.Array<int>(1, 2, 3, 4);
-        var p2 = new int[] { 8, 9, 10, 11 };
-        var p3 = new List<int>() { 5, 15, 20, 25 };
-        var p4 = new ArrayList() { 12, 14, 15 }; // The reason for the error description here is because the hint is not safe.
+        var arr = new DataStructures.Array.Array<int>(1, 3, 5, 7);
+        var crr = arr.Clone() as DataStructures.Array.Array<int>;
 
+        foreach (var item in arr)
+        {
+            Console.Write($"{item,-3}");
+        }
+
+        Console.WriteLine();
+        foreach (var item in crr)
+        {
+            Console.Write($"{item,-3}");
+        }
+    }
+
+    /*
+    static void Main(string[] args)
+    {
+
+        
         var arr = new DataStructures
             .Array
-            .Array<int>(p3);
+            .Array<int>();
+
+        for (int i = 0; i < 64; i++)
+        {
+            arr.Add(i + 1);
+            Console.WriteLine($"{i + 1} has been added to the array.");
+            Console.WriteLine($"{arr.Count}/{arr.Capacity}");
+        }
+
+        Console.WriteLine();
+
+        for (int i = arr.Count; i >= 1; i--)
+        {
+            Console.WriteLine($"{arr.Remove()} has been removed from the array.");
+            Console.WriteLine($"{arr.Count}/{arr.Capacity}");
+        }
 
         foreach (var item in arr)
         {
@@ -21,6 +51,14 @@ class Program
         }
 
     }
+    */
+
+    /*
+    var p1 = new DataStructures.Array.Array<int>(1, 2, 3, 4);
+    var p2 = new int[] { 8, 9, 10, 11 };
+    var p3 = new List<int>() { 5, 15, 20, 25 };
+    var p4 = new ArrayList() { 12, 14, 15 }; // The reason for the error description here is because the hint is not safe.
+    */
 
 
     /*

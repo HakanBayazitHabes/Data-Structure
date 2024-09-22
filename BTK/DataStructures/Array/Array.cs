@@ -92,7 +92,12 @@ namespace DataStructures.Array
 
         public object Clone()
         {
-            throw new NotImplementedException();
+            // return this.MemberwiseClone();
+            var arr = new Array<T>();
+            foreach (var item in this)
+                arr.Add(item);
+            return arr;
+
         }
 
         public IEnumerator<T> GetEnumerator()
