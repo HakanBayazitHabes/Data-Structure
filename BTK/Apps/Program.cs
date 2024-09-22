@@ -14,6 +14,21 @@ class Program
         arr.Add(23);
         arr.Add(22);
         arr.Add(44);
+        arr.Add(34);
+        arr.Add(45);
+
+        // arr.Remove();
+
+        foreach (var item in arr)
+        {
+            Console.WriteLine(item);
+        }
+
+        Console.WriteLine("---");
+
+        arr.Where(x => x % 2 == 0)
+            .ToList()
+            .ForEach(x => Console.WriteLine(x));
 
         Console.WriteLine($"{arr.Count} / {arr.Capacity}");
         // Console.ReadKey();
