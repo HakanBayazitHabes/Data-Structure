@@ -1,8 +1,5 @@
 ﻿using System.Collections;
-using System.ComponentModel.DataAnnotations;
-using System.Security.Cryptography;
 using DataStructures.LinkedList.DoublyLinkedList;
-using Microsoft.VisualBasic;
 
 namespace DoublyLinkedList;
 
@@ -241,7 +238,7 @@ public class Program
 
     }
 
-    private static void DoublyLınkedListApp02()
+    private static void DoublyLinkedListApp02()
     {
         var list = new DoublyLinkedList<char>(['a', 'b', 'c']);
 
