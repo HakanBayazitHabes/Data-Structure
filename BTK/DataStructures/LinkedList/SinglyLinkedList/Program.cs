@@ -252,28 +252,31 @@ public class SinglyLinkedList<T> : IEnumerable<T>
 
 }
 
-class Program
+
+namespace SinglyLinkedList
 {
-    static void Main()
+    static class Program
     {
-        var rnd = new Random();
-        var initial = Enumerable.Range(1, 5).OrderBy(x => rnd.Next()).ToList();
-        var list = new SinglyLinkedList<int>(initial);
-
-        foreach (var item in list)
+        public static void Main()
         {
-            Console.WriteLine(item);
+            var rnd = new Random();
+            var initial = Enumerable.Range(1, 5).OrderBy(x => rnd.Next()).ToList();
+            var list = new SinglyLinkedList<int>(initial);
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+
+            list.Remove(2);
+
+
+            Console.WriteLine();
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+                Console.ReadKey();
+            }
         }
-
-        list.Remove(2);
-
-
-        Console.WriteLine();
-        foreach (var item in list)
-        {
-            Console.WriteLine(item);
-        }
-
-        Console.ReadKey();
     }
 }
